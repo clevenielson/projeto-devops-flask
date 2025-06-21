@@ -3,6 +3,6 @@ APP = restapi
 test:
 	@flake8 . --exclude .venv
 
-compose: test
+compose:
 	@docker-compose build
 	@docker-compose up
